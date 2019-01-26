@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import ButtonCounter from './apps/03_state/lesson';
+import CounterButton from './apps/04_props/lesson';
 
-ReactDOM.render(<ButtonCounter />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
