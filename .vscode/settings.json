@@ -6,7 +6,7 @@
     "python.linting.enabled": true,
     "eslint.autoFixOnSave": false,
     "eslint.options": {
-        "configFile": "/home/vladislav/skils/javascript/first_js_practice/eslint/.eslintrc.js"
+        "configFile": "/home/vladislav/skills/javascript/react-redux/react-redux-tutorial/.eslintrc.json"
     },
     "javascript.format.enable": false,
     "editor.tabSize": 2,
