@@ -1,0 +1,81 @@
+.title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 900;
+  color: rgba(175, 47, 47, 0.15);
+  margin-bottom: 20px;
+}
+
+.newsList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex: 1 0 100%;
+}
+
+.news {
+  margin: 10px 0;
+  padding: 20px 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.newsTitle {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.description span {
+  padding: 0 10px;
+}
+
+.description .text {
+  padding-left: 0;
+}
+
+.description span:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+.inputWrapper {
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  flex: 1 0 100%;
+}
+
+.input {
+  font-family: 'Indie Flower', cursive;
+  padding: 16px 16px 16px 60px;
+  border: none;
+  background: rgba(0, 0, 0, 0.003);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28px;
+  font-style: italic;
+  box-shadow: inset 0 -2px 40px rgba(0, 0, 0, 0.03);
+}
+
+.fa-search {
+  position: absolute;
+  font-size: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.input::-webkit-input-placeholder {
+  font-family: 'Indie Flower', cursive;
+}
+
+.input::-moz-placeholder {
+  font-family: 'Indie Flower', cursive;
+}
+
+.input:-moz-placeholder {
+  font-family: 'Indie Flower', cursive;
+}
+
+.input:-ms-input-placeholder {
+  font-family: 'Indie Flower', cursive;
+}
