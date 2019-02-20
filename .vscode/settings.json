@@ -1,14 +1,11 @@
 {
-    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "files.associations": {
         "*.js": "javascriptreact"
     },
     "python.linting.enabled": true,
     "eslint.autoFixOnSave": false,
-    "eslint.options": {
-        "configFile": "/home/vladislav/skills/javascript/react-redux/react-redux-tutorial/.eslintrc.json"
-    },
     "javascript.format.enable": false,
     "editor.tabSize": 2,
     "emmet.triggerExpansionOnTab": true,
+    "eslint.enable": true,
 }
