@@ -5,7 +5,7 @@ import ToDoInput from '../../components/todo-input/todo-input';
 import ToDoList from '../../components/todo-list/todo-list';
 import Footer from '../../components/footer/footer';
 
-import { addTask } from '../../actions/actionCreator';
+import { addTask, deleteTask, completeTask } from '../../actions/actionCreator';
 
 import './todo.css';
 
@@ -39,13 +39,22 @@ class ToDo extends Component {
 
   render() {
     const { activeFilter, taskText } = this.state;
-    const { tasks } = this.props;
+    const { tasks, deleteTask, completeTask } = this.props;
     const isTasksExist = tasks && tasks.length > 0;
 
     return (
       <div className="todo-wrapper">
-        <ToDoInput onKeyPress={this.handleAddTask} onChange={this.handlerInputChange} value={taskText} />
-        {isTasksExist && <ToDoList tasksList={tasks} />}
+        <ToDoInput 
+          onKeyPress={this.handleAddTask} 
+          onChange={this.handlerInputChange}
+          value={taskText}  
+        />
+        {isTasksExist && 
+        <ToDoList 
+          deleteTask={deleteTask}
+          completeTask={completeTask}
+          tasksList={tasks} 
+        />}
         {isTasksExist && <Footer amount={tasks.length} activeFilter={activeFilter} />}
       </div>
     );
@@ -54,4 +63,4 @@ class ToDo extends Component {
 
 export default connect(state => ({
   tasks: state.tasks,
-}), {addTask})(ToDo);
+}), {addTask, deleteTask, completeTask})(ToDo);
